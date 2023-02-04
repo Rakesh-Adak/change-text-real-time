@@ -1,0 +1,152 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 100px auto 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row .column {
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.column .product_img {
+  width: 500px;
+}
+
+.column .subtitle {
+  color: #bf4800;
+}
+
+.column .divider {
+  width: 85%;
+  margin: 10px 0;
+}
+
+.textField {
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: 0.5px solid #666;
+  text-align: left;
+  width: 445px;
+}
+
+.textField::placeholder {
+  text-align: center;
+}
+
+.font_btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  margin: 10px 0 0;
+  transition: 0.3s all;
+  width: 220px;
+}
+
+.font_btn:hover {
+  background-color: #555;
+}
+
+#fontButtonRandom {
+  width: 445px;
+}
+
+.pos-relative {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.renderContent {
+  position: absolute;
+  text-align: center;
+  color: #969696;
+  font-weight: 600;
+  width: 50%;
+}
+
+.text_info {
+  color: #222;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.text_info span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.note {
+  color: #969696;
+  user-select: none;
+  margin-top: 10px;
+}
+
+.title,
+.subtitle {
+  margin: 8px 0;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .row .column {
+    width: 100%;
+  }
+
+  .row .column:nth-child(2) {
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  .column .product_img {
+    width: 350px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+  .font_btn,
+  #fontButtonRandom,
+  .textField {
+    width: 100%;
+  }
+
+  .column .divider {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .title,
+  .subtitle {
+    margin: 8px 0;
+  }
+}

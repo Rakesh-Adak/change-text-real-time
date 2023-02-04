@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Think9 Consumer Assignment</title>
+    <!-- Google Fonts CDN Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Itim&family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600&family=Pacifico&family=Poppins:wght@400;500;600&family=Raleway:ital,wght@0,400;1,500&family=Ubuntu:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column pos-relative">
+          <img
+            src="./assets/img/airpods-img.jpeg"
+            alt="airpods-img"
+            class="product_img"
+          />
+          <div id="renderContent" class="renderContent"></div>
+        </div>
+        <div class="column">
+          <h3 class="subtitle">Free Engraving</h3>
+          <h1 class="title">AirPods (2nd generation)</h1>
+          <p class="info">
+            From ₹2601.00/mo. Per Month with EMI**
+            <br />
+            or
+            <br />
+            MRP ₹14900.00 (Incl. of all taxes)
+          </p>
+          <hr class="divider" />
+          <p class="text_info">
+            Personalise them for free <br />
+            <span>
+              Engrave a mix of emoji, text and numbers to <br />
+              make AirPods unmistakably yours.</span
+            >
+          </p>
+          <input
+            id="textField"
+            oninput="showInputValue()"
+            type="text"
+            placeholder="Enter your custom text here"
+            class="textField"
+            maxlength="20"
+          />
+          <br />
+          <p class="note">*Custom text shall be 20 characters or less.*</p>
+          <br />
+          <button class="font_btn" id="fontButton1" onclick="changeFontStyle1()">
+            Change font to "Itim"
+          </button>
+          <button class="font_btn" id="fontButton2" onclick="changeFontStyle2()">
+            Change font to "Montserrat"
+          </button>
+          <br />
+          <p id="testbtn"></p>
+          <button class="font_btn" id="fontButtonRandom" onclick="getRandomInt()">
+            Choose randomly
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Local Scripts -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
