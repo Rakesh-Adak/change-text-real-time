@@ -140,6 +140,10 @@ body {
   .textField {
     width: 100%;
   }
+  
+  .textField{
+  text-align: center;
+  }
 
   .column .divider {
     width: 100%;
